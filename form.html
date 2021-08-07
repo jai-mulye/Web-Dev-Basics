@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Form</title>
+	<style type="text/css">
+		body {
+			color: tomato;
+			background: #18192e;
+		}
+
+		h1 {
+			color: #ffd700;
+		}
+	</style>
+</head>
+<body>
+	<h1>HTML Form</h1>
+	<hr/><br/>
+	<form action="/tacos">
+		<label for="fname">First Name :</label>
+		<input type="text" name="fname" na="fname" required><br/><br/>
+		<label for="lname">Last Name :</label>
+		<input type="text" name="lname" id="lname" required><br/><br/>
+		<label for="age">Select your Age Group:</label>
+		<select id="age" id="age">
+			<option value="1">-</option>
+  			<option value="2">Under 18</option>
+ 			<option value="3">18 - 25</option>
+  			<option value="4">25 - 30</option>
+  			<option value="5">31 - 40</option>
+  			<option value="5">above 40</option>
+		</select> <br/><br/>
+		<fieldset>
+			<legend>Gender:</legend>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label><br/>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label><br/>
+			<input type="radio" id="other" name="gender" value="other">
+			<label for="other">Other</label><br/>
+		</fieldset>
+		<fieldset>
+			<legend>Known Languages</legend>
+			<input type="checkbox" name="marathi">	
+			<label for="marathi">Marathi</label><br/>
+			<input type="checkbox" name="hindi">	
+			<label for="hindi">Hindi</label><br/>
+			<input type="checkbox" name="english">	
+			<label for="english">English</label><br/>
+		</fieldset>
+		<br/>
+		<label for="comments">Comments:</label> <br/>
+		<textarea id="comments" id="comments" rows="5" cols="50" placeholder="Enter your comments here..."></textarea>
+		<br/><br/><hr/><br/>	
+		<button type="Submit">Submit</button>
+		<button type="button" onclick="alert('Hello !')">Click Me!</button>
+		<br/><br/>
+	</form>
+</body>
+</html>
